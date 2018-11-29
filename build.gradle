@@ -4,9 +4,13 @@ buildscript {
 	}
 	repositories {
 		mavenCentral()
+		maven {
+			url uri('../rapi-generator/build/repos/snapshots')
+		}
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("com.vcgdev.plugin:rapi-generator:1.0")
 	}
 }
 
@@ -14,8 +18,9 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'com.vcgdev.plugin'
 
-group = 'com.vcgdev'
+group = 'example-plugin'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
