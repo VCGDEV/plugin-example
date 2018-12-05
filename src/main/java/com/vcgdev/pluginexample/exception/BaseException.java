@@ -1,4 +1,4 @@
-package com.vcgdev.pluginexample;
+package com.vcgdev.pluginexample.exception;
 
 import lombok.Data;
 import lombok.ToString;

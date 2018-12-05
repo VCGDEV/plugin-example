@@ -46,4 +46,6 @@ genRest{
 	entityPackage = "domain"
 	resourcePackage = "rest"
 	dtoPackage = "views"
+    exceptionClass = "BaseException"
+    exceptionPackage = "exception"
 }
