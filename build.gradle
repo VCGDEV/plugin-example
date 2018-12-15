@@ -5,7 +5,7 @@ buildscript {
 	repositories {
 		mavenCentral()
 		maven {
-			url uri('../rapi-generator/build/repos/snapshots')
+			url 'http://5.189.184.52:8081/artifactory/libs-snapshot/'
 		}
 	}
 	dependencies {

@@ -1,11 +1,13 @@
 package com.vcgdev.pluginexample.exception;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.springframework.http.HttpStatus;
 
 @Data
 @ToString
+@EqualsAndHashCode(callSuper = false)
 public class BaseException extends Exception {
     private HttpStatus status;
     private String message;
